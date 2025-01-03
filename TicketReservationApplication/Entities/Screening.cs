@@ -22,7 +22,6 @@ namespace TicketReservationApplication.Entities
 		[Required(ErrorMessage = "Field is required.")]
 		public DateTime EndDate { get; set; }
 
-		// Navigation properties
 		[ForeignKey(nameof(MovieId))]
 		public Movie Movie { get; set; }
 

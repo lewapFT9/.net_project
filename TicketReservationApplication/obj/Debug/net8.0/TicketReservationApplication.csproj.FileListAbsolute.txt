@@ -253,3 +253,4 @@ C:\Users\pawel\Desktop\TicketReservationApplication\TicketReservationApplication
 C:\Users\pawel\Desktop\TicketReservationApplication\TicketReservationApplication\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\pawel\Desktop\TicketReservationApplication\TicketReservationApplication\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\pawel\Desktop\TicketReservationApplication\TicketReservationApplication\obj\Debug\net8.0\TicketReservationApplication.sourcelink.json
+C:\Users\pawel\Desktop\TicketReservationApplication\TicketReservationApplication\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll

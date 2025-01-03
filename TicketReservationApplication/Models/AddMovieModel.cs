@@ -1,12 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace TicketReservationApplication.Entities
+namespace TicketReservationApplication.Models
 {
-	public class Movie
+	public class AddMovieModel
 	{
-		[Key]
-		public int Id { get; set; }
 
 		[Required(ErrorMessage = "Field is required.")]
 		[StringLength(100)]
@@ -25,7 +22,10 @@ namespace TicketReservationApplication.Entities
 		public string Language { get; set; }
 
 		public string Description { get; set; } 
+
 		[StringLength(10)]
-		public string AgeRestriction { get; set; } 
+		[RegularExpression(@"^PG\d{2}$",
+			ErrorMessage = "Please Enter Age Restriction.")]
+		public string AgeRestriction { get; set; }
 	}
 }

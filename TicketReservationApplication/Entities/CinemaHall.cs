@@ -1,9 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using System.ComponentModel.DataAnnotations;
 
 namespace TicketReservationApplication.Entities
 {
-	public class CinemaHall
+    [Index(nameof(Name), IsUnique = true)]
+    public class CinemaHall
 	{
 		[Key]
 		public int Id { get; set; }

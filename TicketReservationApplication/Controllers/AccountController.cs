@@ -55,7 +55,7 @@ namespace TicketReservationApplication.Controllers
                     ModelState.Clear();
                     ViewBag.Message = $"{userAccount.Email} has been registered succesfully. Please log in.";
                 }
-                catch (DbUpdateException e)
+                catch (DbUpdateException ex)
                 {
                     ModelState.AddModelError("", "Email is already used!");
                     return View(model);
@@ -65,7 +65,6 @@ namespace TicketReservationApplication.Controllers
             }
             else
             {
-                Console.WriteLine("chuj z modelem");
                 return View(model);
             }
         }
@@ -110,7 +109,7 @@ namespace TicketReservationApplication.Controllers
             return RedirectToAction("Login");
         }
 
-        [Authorize]
+        [Authorize(Roles = "USER,ADMIN")]
         public IActionResult UserPage()
         {
             ViewBag.Name = HttpContext.User.Identity.Name;

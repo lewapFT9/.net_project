@@ -1,0 +1,52 @@
+﻿@model TicketReservationApplication.Models.CreateScreeningModel
+
+@{
+    ViewData["Title"] = "CreateScreening";
+}
+
+<h1>CreateScreening</h1>
+
+<h4>CreateScreeningModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateScreening" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @if (ViewBag.Message != null)
+            {
+                <div class="form-group" , style="color: green;">@ViewBag.Message</div>
+            }
+            @if (ViewBag.Message1 != null)
+            {
+                <div class="form-group" , style="color: red;">@ViewBag.Message1</div>
+            }
+            <div class="form-group">
+                <label for="FilmId">Select Film</label>
+                <select asp-for="FilmId" class="form-control" asp-items="ViewBag.Films"></select>
+            </div>
+
+            <div class="form-group">
+                <label for="CinemaHallId">Select Cinema Hall</label>
+                <select asp-for="CinemaHallId" class="form-control" asp-items="ViewBag.Halls"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ScreeningDate" class="control-label"></label>
+                <input asp-for="ScreeningDate" class="form-control" type="datetime-local" />
+                <span asp-validation-for="ScreeningDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -22,9 +22,8 @@ namespace TicketReservationApplication.Entities
 		public int OccupiedSeats { get; set; }
 
 		[Column(TypeName = "DECIMAL(5, 2)")]
-		public decimal AttendancePercentage { get; set; } // Just a regular column in the database
+		public decimal AttendancePercentage { get; set; } 
 
-		// Navigation properties
 		[ForeignKey(nameof(ScreeningId))]
 		public Screening Screening { get; set; }
 

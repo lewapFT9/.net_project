@@ -14,12 +14,10 @@ namespace TicketReservationApplication.Entities
 		public int SeatId { get; set; }
 
 		[Required(ErrorMessage = "Field is required.")]
-		public int UserAccountId { get; set; } // Zastąpione "UzytkownikId"
-
+		public int UserAccountId { get; set; } 
 		[Required(ErrorMessage = "Field is required.")]
 		public DateTime ReservationDate { get; set; } = DateTime.Now;
 
-		// Navigation properties
 		[ForeignKey(nameof(SeatId))]
 		public Seat Seat { get; set; }
 

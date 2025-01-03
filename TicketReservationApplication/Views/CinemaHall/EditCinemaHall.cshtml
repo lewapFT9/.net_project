@@ -1,0 +1,47 @@
+﻿@model TicketReservationApplication.Entities.CinemaHall
+
+@{
+    ViewData["Title"] = "EditCinemaHall";
+}
+
+<h1>EditCinemaHall</h1>
+
+<h4>CinemaHall</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditCinemaHall">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @if (ViewBag.Message != null)
+            {
+                <div class="form-group" , style="color: green;">@ViewBag.Message</div>
+            }
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberOfRows" class="control-label"></label>
+                <input asp-for="NumberOfRows" class="form-control" />
+                <span asp-validation-for="NumberOfRows" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SeatsPerRow" class="control-label"></label>
+                <input asp-for="SeatsPerRow" class="form-control" />
+                <span asp-validation-for="SeatsPerRow" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

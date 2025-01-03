@@ -19,9 +19,8 @@ namespace TicketReservationApplication.Entities
 		public int SeatNumber { get; set; }
 
 		[Required(ErrorMessage = "Field is required.")]
-		public bool IsOccupied { get; set; } = false; // Default value as in SQL
+		public bool IsOccupied { get; set; } = false; 
 
-		// Navigation property
 		[ForeignKey(nameof(ScreeningId))]
 		public Screening Screening { get; set; }
 	}

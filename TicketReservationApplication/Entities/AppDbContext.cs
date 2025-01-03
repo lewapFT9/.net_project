@@ -19,54 +19,47 @@ namespace TicketReservationApplication.Entities
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			// Relacja UserAccount <-> Reservation
 			modelBuilder.Entity<Reservation>()
 				.HasOne(r => r.UserAccount)
-				.WithMany() // Brak kolekcji nawigacyjnej w UserAccount
+				.WithMany() 
 				.HasForeignKey(r => r.UserAccountId)
-				.OnDelete(DeleteBehavior.NoAction); // NoAction dla UserAccount
+				.OnDelete(DeleteBehavior.NoAction); 
 
-			// Relacja Movie <-> Screening
 			modelBuilder.Entity<Screening>()
 				.HasOne(s => s.Movie)
-				.WithMany() // Brak kolekcji nawigacyjnej w Movie
+				.WithMany() 
 				.HasForeignKey(s => s.MovieId)
-				.OnDelete(DeleteBehavior.NoAction); // NoAction dla Movie
+				.OnDelete(DeleteBehavior.NoAction); 
 
-			// Relacja CinemaHall <-> Screening
 			modelBuilder.Entity<Screening>()
 				.HasOne(s => s.CinemaHall)
-				.WithMany() // Brak kolekcji nawigacyjnej w CinemaHall
+				.WithMany() 
 				.HasForeignKey(s => s.CinemaHallId)
-				.OnDelete(DeleteBehavior.NoAction); // NoAction dla CinemaHall
+				.OnDelete(DeleteBehavior.NoAction); 
 
-			// Relacja ScreeningAttendance <-> Screening
 			modelBuilder.Entity<ScreeningAttendance>()
 				.HasOne(sa => sa.Screening)
-				.WithMany() // Brak kolekcji nawigacyjnej w Screening
+				.WithMany() 
 				.HasForeignKey(sa => sa.ScreeningId)
-				.OnDelete(DeleteBehavior.NoAction); // NoAction dla ScreeningAttendance -> Screening
+				.OnDelete(DeleteBehavior.NoAction); 
 
-			// Relacja ScreeningAttendance <-> Movie
 			modelBuilder.Entity<ScreeningAttendance>()
 				.HasOne(sa => sa.Movie)
-				.WithMany() // Brak kolekcji nawigacyjnej w Movie
+				.WithMany() 
 				.HasForeignKey(sa => sa.MovieId)
-				.OnDelete(DeleteBehavior.NoAction); // NoAction dla ScreeningAttendance -> Movie
+				.OnDelete(DeleteBehavior.NoAction); 
 
-			// Relacja Seat <-> Screening
 			modelBuilder.Entity<Seat>()
 				.HasOne(s => s.Screening)
-				.WithMany() // Brak kolekcji nawigacyjnej w Screening
+				.WithMany() 
 				.HasForeignKey(s => s.ScreeningId)
-				.OnDelete(DeleteBehavior.NoAction); // NoAction dla Seat -> Screening
+				.OnDelete(DeleteBehavior.NoAction); 
 
-			// Relacja Reservation <-> Seat
 			modelBuilder.Entity<Reservation>()
 				.HasOne(r => r.Seat)
-				.WithMany() // Brak kolekcji nawigacyjnej w Seat
+				.WithMany()
 				.HasForeignKey(r => r.SeatId)
-				.OnDelete(DeleteBehavior.NoAction); // NoAction dla Reservation -> Seat
+				.OnDelete(DeleteBehavior.NoAction); 
 
 			base.OnModelCreating(modelBuilder);
 		}
