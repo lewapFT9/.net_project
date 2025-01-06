@@ -12,16 +12,17 @@ namespace TicketReservationApplication.Entities
 		[Required(ErrorMessage = "Field is required.")]
 		public int ScreeningId { get; set; }
 
-		[Required(ErrorMessage = "Field is required.")]
-		public int RowNumber { get; set; }
+        [Required(ErrorMessage = "Field is required.")]
+		public int UserAccountId { get; set; }
 
-		[Required(ErrorMessage = "Field is required.")]
-		public int SeatNumber { get; set; }
+        [Required(ErrorMessage = "Field is required.")]
+		public bool IsConfirmed { get; set; } = false;
 
-		[Required(ErrorMessage = "Field is required.")]
-		public bool IsOccupied { get; set; } = false; 
-
-		[ForeignKey(nameof(ScreeningId))]
+        [ForeignKey(nameof(ScreeningId))]
 		public Screening Screening { get; set; }
-	}
+
+        [ForeignKey(nameof(UserAccountId))]
+		public UserAccount Account { get; set; }
+
+    }
 }

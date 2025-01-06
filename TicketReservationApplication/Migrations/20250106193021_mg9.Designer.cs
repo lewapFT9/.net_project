@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TicketReservationApplication.Entities;
 
@@ -11,9 +12,11 @@ using TicketReservationApplication.Entities;
 namespace TicketReservationApplication.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250106193021_mg9")]
+    partial class mg9
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -191,20 +194,21 @@ namespace TicketReservationApplication.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<bool>("IsConfirmed")
+                    b.Property<bool>("IsOccupied")
                         .HasColumnType("bit");
+
+                    b.Property<int>("RowNumber")
+                        .HasColumnType("int");
 
                     b.Property<int>("ScreeningId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserAccountId")
+                    b.Property<int>("SeatNumber")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ScreeningId");
-
-                    b.HasIndex("UserAccountId");
 
                     b.ToTable("Seats");
                 });
@@ -322,14 +326,6 @@ namespace TicketReservationApplication.Migrations
                         .HasForeignKey("ScreeningId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
-
-                    b.HasOne("TicketReservationApplication.Entities.UserAccount", "Account")
-                        .WithMany()
-                        .HasForeignKey("UserAccountId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.Navigation("Account");
 
                     b.Navigation("Screening");
                 });

@@ -53,9 +53,15 @@ namespace TicketReservationApplication.Entities
 				.HasOne(s => s.Screening)
 				.WithMany() 
 				.HasForeignKey(s => s.ScreeningId)
-				.OnDelete(DeleteBehavior.NoAction); 
+				.OnDelete(DeleteBehavior.NoAction);
+            
+			modelBuilder.Entity<Seat>()
+                .HasOne(s => s.Account)
+                .WithMany()
+                .HasForeignKey(s => s.UserAccountId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-			modelBuilder.Entity<Reservation>()
+            modelBuilder.Entity<Reservation>()
 				.HasOne(r => r.Seat)
 				.WithMany()
 				.HasForeignKey(r => r.SeatId)

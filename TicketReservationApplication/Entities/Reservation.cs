@@ -8,20 +8,25 @@ namespace TicketReservationApplication.Entities
 	public class Reservation
 	{
 		[Key]
-		public int Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 
 		[Required(ErrorMessage = "Field is required.")]
 		public int SeatId { get; set; }
 
 		[Required(ErrorMessage = "Field is required.")]
 		public int UserAccountId { get; set; } 
+
 		[Required(ErrorMessage = "Field is required.")]
-		public DateTime ReservationDate { get; set; } = DateTime.Now;
+		public int ScreeningId { get; set; }
 
 		[ForeignKey(nameof(SeatId))]
 		public Seat Seat { get; set; }
 
 		[ForeignKey(nameof(UserAccountId))]
 		public UserAccount UserAccount { get; set; }
+
+		[ForeignKey(nameof(ScreeningId))]
+		public Screening Screening { get; set; }
 	}
 }

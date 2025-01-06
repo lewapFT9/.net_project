@@ -1,0 +1,42 @@
+﻿@model TicketReservationApplication.Entities.Screening
+
+@{
+    ViewData["Title"] = "ViewScreeningDetails";
+}
+
+<h1>ViewScreeningDetails</h1>
+
+<div>
+    <h4>Screening</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MovieId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MovieId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CinemaHallId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CinemaHallId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ScreeningDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ScreeningDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Reservate", "Reservate", "Reservation", new { id = Model.Id }, null)
+    <a asp-action="Index">Back to List</a>
+</div>

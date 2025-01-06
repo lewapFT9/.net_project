@@ -1,0 +1,30 @@
+﻿@model TicketReservationApplication.Entities.Reservation
+
+<h1>Reservate</h1>
+
+<h4>Reservation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Reservate" method="post">
+            @if (ViewBag.Message != null)
+            {
+                <div class="form-group" , style="color: green;">@ViewBag.Message</div>
+            }
+            <!-- Ukryte pole przesyłające ScreeningId -->
+            <input type="hidden" asp-for="ScreeningId" />
+
+            <button type="submit">Reservate</button>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

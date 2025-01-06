@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using TicketReservationApplication.Entities;
 using TicketReservationApplication.Models;
 
@@ -89,5 +90,25 @@ namespace TicketReservationApplication.Controllers
             ViewBag.Halls = new SelectList(_context.CinemaHalls, "Id", "Name");
             return View(model);
         }
+
+        [Authorize]
+        public IActionResult GetScreenings() 
+        {
+            return View(_context.Screenings.ToList());
+        }
+        
+        [Authorize]
+        public async Task<IActionResult> ViewScreeningDetails(int id)
+        {
+            var screening = await _context.Screenings.FirstOrDefaultAsync(m => m.Id == id);
+
+            if (screening == null)
+            {
+                return NotFound();
+            }
+
+            return View(screening);
+        }
+
     }
 }
