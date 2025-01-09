@@ -1,9 +1,11 @@
 ﻿@if(Context.User.Identity.Name != null)
 {
+	    var userName = Context.User.Claims.FirstOrDefault(c => c.Type == "Name")?.Value;
+
 	<form asp-controller="Account" asp-action="LogOut" method="post" id="logoutForm" class="navbar-right">
 		<ul class="nav navbar-nav navbar-right">
 			<li>
-				Hello @Context.User.Identity.Name
+				Hello @userName
 			</li>
 			<li>
 				<button type="submit" class="btn btn-link navbar-btn navbar-link">Log off</button>

@@ -5,5 +5,9 @@
     <div style="text-align: center; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
         <h1 style="color: #333; font-family: Arial, sans-serif;">Welcome</h1>
         <h4 style="color: #555;">Hello, @ViewBag.Name!</h4>
+        @Html.ActionLink("Add Movie", "AddMovie", "Movie") |
+        @Html.ActionLink("Add Cinema Hall", "AddCinemaHall", "CinemaHall") |
+        @Html.ActionLink("View Cinema Halls", "ViewCinemaHalls", "CinemaHall") |
+        @Html.ActionLink("Add Screening", "CreateScreening", "Screening") |
     </div>
 </div>

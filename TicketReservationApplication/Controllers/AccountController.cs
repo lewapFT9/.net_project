@@ -19,10 +19,10 @@ namespace TicketReservationApplication.Controllers
             _context = appDbContext;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
 
         public IActionResult Registration()
         {
@@ -93,7 +93,7 @@ namespace TicketReservationApplication.Controllers
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                     HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
 
-                    return RedirectToAction("UserPage");
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
@@ -109,8 +109,8 @@ namespace TicketReservationApplication.Controllers
             return RedirectToAction("Login");
         }
 
-        [Authorize(Roles = "USER,ADMIN")]
-        public IActionResult UserPage()
+        [Authorize(Roles = "ADMIN")]
+        public IActionResult AdminPage()
         {
             ViewBag.Name = HttpContext.User.Identity.Name;
             return View();
