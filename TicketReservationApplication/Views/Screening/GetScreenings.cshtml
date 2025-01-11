@@ -1,56 +1,43 @@
-﻿@model IEnumerable<TicketReservationApplication.Entities.Screening>
-
-@{
-    ViewData["Title"] = "GetScreenings";
-}
-
-<h1>GetScreenings</h1>
-
-<table class="table">
+﻿<table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.MovieId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CinemaHallId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ScreeningDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EndDate)
-            </th>
+            <th>Movie Title</th>
+            <th>Cinema Hall</th>
+            <th>Screening Date</th>
+            <th>End Date</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.MovieId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CinemaHallId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ScreeningDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EndDate)
-            </td>
-            <td>
-
-            @{
-                if (User.IsInRole("ADMIN"))
-                {
-                    @Html.ActionLink(" Edit ", "Edit", new { id = item.Id })
-                    @Html.ActionLink(" Delete ", "Delete", new { /* id=item.PrimaryKey */ })
-                }
-            }
-                @Html.ActionLink("Details", "ViewScreeningDetails", new {id=item.Id}) |
-            </td>
-        </tr>
-}
+        @foreach (var screening in Model)
+        {
+            <tr>
+                <td>@screening.MovieTitle</td>
+                <td>@screening.CinemaHallName</td>
+                <td>@screening.ScreeningDate.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@screening.EndDate.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>
+                    @{
+                        if (User.IsInRole("ADMIN"))
+                        {
+                            @Html.ActionLink(" Edit ", "Edit", new { id = screening.Id })
+                            @Html.ActionLink(" Delete ", "Delete", new { id = screening.Id })
+                        }
+                    }
+                    @Html.ActionLink("Details", "ViewScreeningDetails", new { id = screening.Id }) |
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+
+
+
+
+
+
+
+
+
+ 

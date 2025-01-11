@@ -38,6 +38,7 @@
 </div>
 <div>
     @Html.ActionLink("Reservate", "Reservate", "Reservation", new { id = Model.Id }, null)
+    @Html.ActionLink("View Movie Details", "ViewMovieDetails", "Movie", new { id = Model.MovieId }, null)
     @Html.ActionLink("Go back", "GetScreenings")
 
 </div>

@@ -3,32 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\entities\\attendanceupdaterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\entities\\attendanceupdaterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\views\\screening\\getscreenings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\views\\screening\\getscreenings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\entities\\screeningservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\entities\\screeningservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\controllers\\screeningcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\controllers\\screeningcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\entities\\screening.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\entities\\screening.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\models\\addcinemahallmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\models\\addcinemahallmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\models\\addmoviemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\models\\addmoviemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\views\\screening\\viewscreeningdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\views\\screening\\viewscreeningdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\views\\cinemahall\\viewcinemahalls.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\views\\cinemahall\\viewcinemahalls.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\views\\movie\\viewmoviedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\views\\movie\\viewmoviedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\views\\account\\adminpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\views\\account\\adminpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\views\\movie\\viewmovies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\views\\movie\\viewmovies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\views\\movie\\editmovie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\views\\movie\\editmovie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\views\\cinemahall\\editcinemahall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\views\\cinemahall\\editcinemahall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|c:\\users\\pawel\\desktop\\ticketreservationapplication\\ticketreservationapplication\\controllers\\cinemahallcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B61C74AA-7A74-467C-ADBC-B65C1D10FE65}|TicketReservationApplication\\TicketReservationApplication.csproj|solutionrelative:ticketreservationapplication\\controllers\\cinemahallcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,92 +75,197 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Program.cs",
-              "RelativeDocumentMoniker": "TicketReservationApplication\\Program.cs",
-              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Program.cs",
-              "RelativeToolTip": "TicketReservationApplication\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA/AAAAAAAAAA==",
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Controllers\\ReservationController.cs",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "TicketReservationApplication\\Controllers\\ReservationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T21:59:07.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AttendanceUpdaterService.cs",
-              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Entities\\AttendanceUpdaterService.cs",
-              "RelativeDocumentMoniker": "TicketReservationApplication\\Entities\\AttendanceUpdaterService.cs",
-              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Entities\\AttendanceUpdaterService.cs",
-              "RelativeToolTip": "TicketReservationApplication\\Entities\\AttendanceUpdaterService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T21:57:36.901Z",
+              "WhenOpened": "2025-01-11T17:03:12.216Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\appsettings.json",
-              "RelativeDocumentMoniker": "TicketReservationApplication\\appsettings.json",
-              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\appsettings.json",
-              "RelativeToolTip": "TicketReservationApplication\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-10T21:56:27.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ScreeningService.cs",
-              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Entities\\ScreeningService.cs",
-              "RelativeDocumentMoniker": "TicketReservationApplication\\Entities\\ScreeningService.cs",
-              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Entities\\ScreeningService.cs*",
-              "RelativeToolTip": "TicketReservationApplication\\Entities\\ScreeningService.cs*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwBkAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T21:55:45.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Screening.cs",
               "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Entities\\Screening.cs",
               "RelativeDocumentMoniker": "TicketReservationApplication\\Entities\\Screening.cs",
               "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Entities\\Screening.cs",
               "RelativeToolTip": "TicketReservationApplication\\Entities\\Screening.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T20:43:46.876Z",
+              "WhenOpened": "2025-01-11T16:47:42.557Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "TicketReservationApplication\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "TicketReservationApplication\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCgAAAANAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ScreeningController.cs",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Controllers\\ScreeningController.cs",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Controllers\\ScreeningController.cs",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Controllers\\ScreeningController.cs",
+              "RelativeToolTip": "TicketReservationApplication\\Controllers\\ScreeningController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAuwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T17:19:58.205Z",
+              "WhenOpened": "2025-01-11T16:24:09.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetScreenings.cshtml",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Screening\\GetScreenings.cshtml",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Views\\Screening\\GetScreenings.cshtml",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Screening\\GetScreenings.cshtml",
+              "RelativeToolTip": "TicketReservationApplication\\Views\\Screening\\GetScreenings.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T16:22:41.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddCinemaHallModel.cs",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Models\\AddCinemaHallModel.cs",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Models\\AddCinemaHallModel.cs",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Models\\AddCinemaHallModel.cs",
+              "RelativeToolTip": "TicketReservationApplication\\Models\\AddCinemaHallModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T16:21:53.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Account\\AdminPage.cshtml",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Views\\Account\\AdminPage.cshtml",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Account\\AdminPage.cshtml",
+              "RelativeToolTip": "TicketReservationApplication\\Views\\Account\\AdminPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T16:17:56.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TicketReservationApplication\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T16:01:10.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ViewMovieDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Movie\\ViewMovieDetails.cshtml",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Views\\Movie\\ViewMovieDetails.cshtml",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Movie\\ViewMovieDetails.cshtml",
+              "RelativeToolTip": "TicketReservationApplication\\Views\\Movie\\ViewMovieDetails.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAADkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T15:51:07.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MovieController.cs",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Controllers\\MovieController.cs",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Controllers\\MovieController.cs",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Controllers\\MovieController.cs",
+              "RelativeToolTip": "TicketReservationApplication\\Controllers\\MovieController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwE0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T15:04:10.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AddMovieModel.cs",
-              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Models\\AddMovieModel.cs",
-              "RelativeDocumentMoniker": "TicketReservationApplication\\Models\\AddMovieModel.cs",
-              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Models\\AddMovieModel.cs",
-              "RelativeToolTip": "TicketReservationApplication\\Models\\AddMovieModel.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Title": "ViewCinemaHalls.cshtml",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\CinemaHall\\ViewCinemaHalls.cshtml",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Views\\CinemaHall\\ViewCinemaHalls.cshtml",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\CinemaHall\\ViewCinemaHalls.cshtml",
+              "RelativeToolTip": "TicketReservationApplication\\Views\\CinemaHall\\ViewCinemaHalls.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T15:51:36.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ViewScreeningDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Screening\\ViewScreeningDetails.cshtml",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Views\\Screening\\ViewScreeningDetails.cshtml",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Screening\\ViewScreeningDetails.cshtml",
+              "RelativeToolTip": "TicketReservationApplication\\Views\\Screening\\ViewScreeningDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T15:57:42.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ViewMovies.cshtml",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Movie\\ViewMovies.cshtml",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Views\\Movie\\ViewMovies.cshtml",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Movie\\ViewMovies.cshtml",
+              "RelativeToolTip": "TicketReservationApplication\\Views\\Movie\\ViewMovies.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T15:51:02.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EditMovie.cshtml",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Movie\\EditMovie.cshtml",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Views\\Movie\\EditMovie.cshtml",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\Movie\\EditMovie.cshtml",
+              "RelativeToolTip": "TicketReservationApplication\\Views\\Movie\\EditMovie.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAD0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T15:50:10.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditCinemaHall.cshtml",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\CinemaHall\\EditCinemaHall.cshtml",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Views\\CinemaHall\\EditCinemaHall.cshtml",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Views\\CinemaHall\\EditCinemaHall.cshtml",
+              "RelativeToolTip": "TicketReservationApplication\\Views\\CinemaHall\\EditCinemaHall.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T15:42:04.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CinemaHallController.cs",
+              "DocumentMoniker": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Controllers\\CinemaHallController.cs",
+              "RelativeDocumentMoniker": "TicketReservationApplication\\Controllers\\CinemaHallController.cs",
+              "ToolTip": "C:\\Users\\pawel\\Desktop\\TicketReservationApplication\\TicketReservationApplication\\Controllers\\CinemaHallController.cs",
+              "RelativeToolTip": "TicketReservationApplication\\Controllers\\CinemaHallController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T17:19:41.505Z"
+              "WhenOpened": "2025-01-11T15:13:30.369Z",
+              "EditorCaption": ""
             }
           ]
         }

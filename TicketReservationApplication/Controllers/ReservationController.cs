@@ -46,42 +46,60 @@ namespace TicketReservationApplication.Controllers
             reservationSeat.ScreeningId = reservation.ScreeningId;
             reservationSeat.UserAccountId = userAccount.Id;
             Console.WriteLine(reservation.ScreeningId + " post");
-            try
+            
+            var screening = _context.Screenings.FirstOrDefault(s => s.Id == reservation.ScreeningId);
+            if (screening != null)
             {
-                _context.Seats.Add(reservationSeat);
-                _context.SaveChanges();
+                var cinemahall = _context.CinemaHalls.FirstOrDefault(ch => ch.Id == screening.CinemaHallId);
+                var seats = cinemahall.SeatsPerRow * cinemahall.NumberOfRows;
+                var reservedSeatsCount = _context.Reservations.Count(r => r.ScreeningId == reservation.ScreeningId);
+
+                if (reservedSeatsCount >= seats)
+                {
+                    ViewBag.Message = "No more available seats for this screening.";
+                    return View(reservation);
+                }
+                try
+                {
+                    _context.Seats.Add(reservationSeat);
+                    _context.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                Seat SeatId = new Seat();
+                SeatId = _context.Seats.Where(s => s.ScreeningId == reservationSeat.ScreeningId && s.UserAccountId == userAccount.Id
+                && s.IsConfirmed == false).FirstOrDefault();
+                
+                if (SeatId == null || SeatId.Id == 0)
+                {
+                    return BadRequest($"Seat could not be created.screening.Id: {reservation.ScreeningId}");
+                }
+
+                reservationToSave.SeatId = SeatId.Id;
+                try
+                {
+                    _context.Reservations.Add(reservationToSave);
+                    _context.SaveChanges();
+                    reservationSeat.IsConfirmed = true;
+                    _context.SaveChanges();
+
+                    ModelState.Clear();
+                    ViewBag.Message = "Reservation has been made succesfully.";
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return View(reservation);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("error");
             }
-
-            Seat SeatId = new Seat();
-            SeatId = _context.Seats.Where(s=> s.ScreeningId == reservationSeat.ScreeningId  && s.UserAccountId == userAccount.Id 
-            && s.IsConfirmed ==false).FirstOrDefault();
-
-            if (SeatId == null || SeatId.Id == 0)
-            {
-                return BadRequest($"Seat could not be created.screening.Id: {reservation.ScreeningId}");
-            }
-
-            reservationToSave.SeatId = SeatId.Id;
-            try
-            {
-                _context.Reservations.Add(reservationToSave);
-                _context.SaveChanges();
-                reservationSeat.IsConfirmed = true;
-                _context.SaveChanges();
-
-                ModelState.Clear();
-                ViewBag.Message = "Reservation has been made succesfully.";
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return View(reservation);
-            }
+            
 
             return View(reservation);
         }

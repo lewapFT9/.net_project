@@ -59,7 +59,7 @@ namespace TicketReservationApplication.Controllers
 			return View(model);
 		}
 
-		//[Authorize(Roles = "ADMIN, USER")]
+		[Authorize]
 		public IActionResult ViewMovies() 
 		{ 
 			return View(_context.Movies.ToList());
@@ -74,9 +74,52 @@ namespace TicketReservationApplication.Controllers
             {
                 return NotFound(); 
             }
+            var referer = Request.Headers["Referer"].ToString();
+            ViewBag.Referer = referer;
 
             return View(movie);
         }
+
+		[Authorize(Roles = "ADMIN")]
+		public IActionResult EditMovie(int id)
+		{
+			var movie = _context.Movies.FirstOrDefault(m => m.Id == id);
+			if (movie == null)
+			{
+				return NotFound();
+			}
+			return View(movie);
+		}
+		[HttpPost]
+		[Authorize(Roles = "ADMIN")]
+		public IActionResult EditMovie(int id, Movie UpdatedMovie)
+		{
+			var movie = _context.Movies.FirstOrDefault(m => m.Id == id);
+			if (movie == null)
+			{
+				return NotFound();
+			}
+			movie.Title = UpdatedMovie.Title;
+			movie.Description = UpdatedMovie.Description;
+			movie.Director = UpdatedMovie.Director;
+			movie.AgeRestriction = UpdatedMovie.AgeRestriction;
+			movie.Language = UpdatedMovie.Language;
+			movie.Duration = UpdatedMovie.Duration;
+			movie.Genre = UpdatedMovie.Genre;
+			try
+			{
+				_context.SaveChanges();
+				ModelState.Clear();
+				ViewBag.Message = $"{movie.Title} has been edited succesfully.";
+				return View(UpdatedMovie);
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+			}
+			return View(movie);
+		}
+
     }
 
 }

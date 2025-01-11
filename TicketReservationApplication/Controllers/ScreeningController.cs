@@ -94,8 +94,26 @@ namespace TicketReservationApplication.Controllers
         [Authorize]
         public IActionResult GetScreenings() 
         {
-            return View(_context.Screenings.ToList());
+            var currentDate = DateTime.Now;
+
+            var screenings = _context.Screenings
+                .Include(s => s.Movie) 
+                .Include(s => s.CinemaHall) 
+                .Where(s => s.ScreeningDate >= currentDate && 
+                            s.ScreeningDate <= currentDate.AddDays(7)) 
+                .Select(s => new
+                {
+                    s.Id,
+                    s.ScreeningDate,
+                    s.EndDate,
+                    MovieTitle = s.Movie.Title, 
+                    CinemaHallName = s.CinemaHall.Name 
+                })
+                .ToList();
+
+            return View(screenings);
         }
+    
         
         [Authorize]
         public async Task<IActionResult> ViewScreeningDetails(int id)
