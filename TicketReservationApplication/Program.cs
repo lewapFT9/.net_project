@@ -12,6 +12,12 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
 
+builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
+
+builder.Services.AddScoped<ScreeningService>(); 
+builder.Services.AddHostedService<AttendanceUpdaterService>(); 
+
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
