@@ -24,7 +24,7 @@
                 var query = @"
                 SELECT Id 
                 FROM Screenings 
-                WHERE EndDate <= GETDATE();";
+                WHERE EndDate <= GETDATE() AND IsAnalysisDone = 0;";
 
                 using (var command = new SqlCommand(query, connection))
                 {

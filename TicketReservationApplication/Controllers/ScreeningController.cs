@@ -124,8 +124,44 @@ namespace TicketReservationApplication.Controllers
             {
                 return NotFound();
             }
+            ScreeningDetailsModel model = new ScreeningDetailsModel();
+            if (ModelState.IsValid)
+            {
+                var movie = _context.Movies.FirstOrDefault(m => m.Id == screening.MovieId);
+                var cinemaHall = _context.CinemaHalls.FirstOrDefault(ch => ch.Id == screening.CinemaHallId);
+                model.ScreeningDate = screening.ScreeningDate;
+                model.EndDate = screening.EndDate;
+                model.MovieTitle = movie.Title;
+                model.CinemaHallName = cinemaHall.Name;
+                model.Id = screening.Id;
+                model.MovieId = screening.MovieId;
+                Console.WriteLine("w ifie");
+                return View(model);
+            }
+            return View(model);
+        }
 
-            return View(screening);
+        [Authorize(Roles ="ADMIN")]
+        public IActionResult GetAnalyses()
+        {
+            var currentDate = DateTime.Now;
+            var data = _context.ScreeningAttendances
+                .Include(sa => sa.Movie)
+                .Include(sa => sa.Screening)
+                .Where(sa => sa.Screening.ScreeningDate >= currentDate.AddDays(-20))
+                .Select(sa => new
+                {
+                    sa.Id,
+                    sa.ScreeningId,
+                    Date = sa.Screening.ScreeningDate,
+                    CinemaHallName = sa.Screening.CinemaHall.Name,
+                    MovieTitle = sa.Screening.Movie.Title,
+                    sa.TotalSeats,
+                    sa.OccupiedSeats,
+                    sa.AttendancePercentage
+                })
+                .ToList();
+            return View(data);
         }
 
     }

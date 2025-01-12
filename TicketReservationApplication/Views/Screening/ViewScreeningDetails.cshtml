@@ -1,4 +1,4 @@
-﻿@model TicketReservationApplication.Entities.Screening
+﻿@model TicketReservationApplication.Models.ScreeningDetailsModel
 
 @{
     ViewData["Title"] = "ViewScreeningDetails";
@@ -7,20 +7,20 @@
 <h1>ViewScreeningDetails</h1>
 
 <div>
-    <h4>Screening</h4>
+    <h4>ScreeningDetailsModel</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MovieId)
+            @Html.DisplayNameFor(model => model.MovieTitle)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MovieId)
+            @Html.DisplayFor(model => model.MovieTitle)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CinemaHallId)
+            @Html.DisplayNameFor(model => model.CinemaHallName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CinemaHallId)
+            @Html.DisplayFor(model => model.CinemaHallName)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.ScreeningDate)
@@ -40,5 +40,4 @@
     @Html.ActionLink("Reservate", "Reservate", "Reservation", new { id = Model.Id }, null)
     @Html.ActionLink("View Movie Details", "ViewMovieDetails", "Movie", new { id = Model.MovieId }, null)
     @Html.ActionLink("Go back", "GetScreenings")
-
 </div>

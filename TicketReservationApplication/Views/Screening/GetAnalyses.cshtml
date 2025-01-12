@@ -1,0 +1,31 @@
+﻿<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Screening Id</th>
+            <th>Screening Date</th>
+            <th>Cinema Hall Name</th>
+            <th>Movie Title</th>
+            <th>Total Seats</th>
+            <th>Occupied Seats</th>
+            <th>Percentage</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var record in Model)
+        {
+            <tr>
+                <td>@record.Id</td>
+                <td>@record.ScreeningId</td>
+                <td>@record.Date.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@record.CinemaHallName</td>
+                <td>@record.MovieTitle</td>
+                <td>@record.TotalSeats</td>
+                <td>@record.OccupiedSeats</td>
+                <td>@record.AttendancePercentage</td>
+
+            </tr>
+        }
+    </tbody>
+</table>

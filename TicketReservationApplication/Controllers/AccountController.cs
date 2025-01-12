@@ -115,5 +115,25 @@ namespace TicketReservationApplication.Controllers
             ViewBag.Name = HttpContext.User.Identity.Name;
             return View();
         }
+
+        [Authorize]
+        public IActionResult ViewMyReservations()
+        {
+            var user = _context.UserAccounts.FirstOrDefault(u => u.Email == HttpContext.User.Identity.Name);
+            var currentDate = DateTime.Now;
+            var reservations = _context.Reservations
+                .Include(r => r.Screening)
+                .Where(r => r.UserAccountId == user.Id && r.Screening.ScreeningDate >= currentDate)
+                .Select(r => new
+                {
+                    r.Id,
+                    r.SeatId,
+                    r.ScreeningId,
+                    MovieTitle = r.Screening.Movie.Title,
+                    Date = r.Screening.ScreeningDate
+                })
+                .ToList();
+            return View(reservations);
+        }
     }
 }

@@ -22,7 +22,10 @@ namespace TicketReservationApplication.Entities
 		[Required(ErrorMessage = "Field is required.")]
 		public DateTime EndDate { get; set; }
 
-		[ForeignKey(nameof(MovieId))]
+		[Required(ErrorMessage = "Field is required.")]
+		public bool IsAnalysisDone { get; set; } = false;
+
+        [ForeignKey(nameof(MovieId))]
 		public Movie Movie { get; set; }
 
 		[ForeignKey(nameof(CinemaHallId))]

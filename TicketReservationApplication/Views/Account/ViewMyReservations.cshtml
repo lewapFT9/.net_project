@@ -1,0 +1,29 @@
+﻿<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Seat Id</th>
+            <th>Screening Id</th>
+            <th>Movie Title</th>
+            <th>Screening Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                <td>@reservation.Id</td>
+                <td>@reservation.SeatId</td>
+                <td>@reservation.ScreeningId</td>
+                <td>@reservation.MovieTitle</td>
+                <td>@reservation.Date.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>
+                    @Html.ActionLink("View Screening Details", "ViewScreeningDetails", "Screening", new { id = reservation.ScreeningId }, null) |
+
+                </td>
+               
+            </tr>
+        }
+    </tbody>
+</table>
