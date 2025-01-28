@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\pawel\Desktop\TicketReservationApplication\TicketReservationApplication
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Account/AdminPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pblBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,12 +42,64 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVc2VyUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Account/ViewMyReservations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWaWV3TXlSZXNlcnZhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/CinemaHall/AddCinemaHall.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2luZW1hSGFsbFxBZGRDaW5lbWFIYWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/CinemaHall/EditCinemaHall.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2luZW1hSGFsbFxFZGl0Q2luZW1hSGFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/CinemaHall/ViewCinemaHalls.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2luZW1hSGFsbFxWaWV3Q2luZW1hSGFsbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Movie/AddMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcQWRkTW92aWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Movie/EditMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcRWRpdE1vdmllLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Movie/ViewMovieDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcVmlld01vdmllRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Movie/ViewMovies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcVmlld01vdmllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Reservation/Reservate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cUmVzZXJ2YXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Screening/CreateScreening.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyZWVuaW5nXENyZWF0ZVNjcmVlbmluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Screening/GetAnalyses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyZWVuaW5nXEdldEFuYWx5c2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Screening/GetScreenings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyZWVuaW5nXEdldFNjcmVlbmluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Screening/ViewScreeningDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyZWVuaW5nXFZpZXdTY3JlZW5pbmdEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/pawel/Desktop/TicketReservationApplication/TicketReservationApplication/Views/Shared/Error.cshtml]

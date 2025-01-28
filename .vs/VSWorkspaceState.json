@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TicketReservationApplication"
   ],
-  "SelectedNode": "\\TicketReservationApplication.sln",
+  "SelectedNode": "\\TicketReservationApplication\\TicketReservationApplication.csproj",
   "PreviewInSolutionExplorer": false
 }

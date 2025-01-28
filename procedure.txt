@@ -1,0 +1,43 @@
+--
+-- Create or alter procedure [dbo].[UpdateScreeningAttendance]
+--
+GO
+PRINT (N'Create or alter procedure [dbo].[UpdateScreeningAttendance]')
+GO
+CREATE OR ALTER PROCEDURE dbo.UpdateScreeningAttendance
+    @ScreeningId INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- Znajdź MovieId
+    DECLARE @MovieId INT;
+    SELECT @MovieId = MovieId FROM Screenings WHERE Id = @ScreeningId;
+
+    -- Znajdź salę i oblicz TotalSeats
+    DECLARE @TotalSeats INT;
+    SELECT @TotalSeats = ch.NumberOfRows * ch.SeatsPerRow
+    FROM Screenings s
+    INNER JOIN CinemaHalls ch ON s.CinemaHallId = ch.Id
+    WHERE s.Id = @ScreeningId;
+
+    -- Oblicz zajęte miejsca (OccupiedSeats)
+    DECLARE @OccupiedSeats INT;
+    SELECT @OccupiedSeats = COUNT(*)
+    FROM Seats
+    WHERE ScreeningId = @ScreeningId;
+
+    -- Oblicz AttendencePercentage
+    DECLARE @AttendancePercentage DECIMAL(5, 2);
+    IF @TotalSeats > 0
+        SET @AttendancePercentage = CAST((@OccupiedSeats * 100.0 / @TotalSeats) AS DECIMAL(5, 2));
+    ELSE
+        SET @AttendancePercentage = 0;
+
+    -- Zaktualizuj tabelę ScreeningAttendance
+    INSERT INTO ScreeningAttendances (ScreeningId, MovieId, TotalSeats, OccupiedSeats, AttendancePercentage)
+    VALUES (@ScreeningId, @MovieId, @TotalSeats, @OccupiedSeats, @AttendancePercentage);
+        UPDATE Screenings SET IsAnalysisDone = 1 WHERE Id = @ScreeningId;
+
+END;
+GO
